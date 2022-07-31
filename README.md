@@ -1,0 +1,1 @@
+# Automation_UI_tests_OrderAndValidationCard [![Build status](https://ci.appveyor.com/api/projects/status/vf2yq6nh1112230a?svg=true)](https://ci.appveyor.com/project/holyblaz/automation-ui-tests-orderandvalidationcard)
