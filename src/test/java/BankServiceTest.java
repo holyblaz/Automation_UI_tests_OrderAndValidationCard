@@ -2,8 +2,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Condition.exactText;
-import static com.codeborne.selenide.Condition.pseudo;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
@@ -49,7 +48,7 @@ public class BankServiceTest {
         form.$("[data-test-id='name'] input").setValue("Иванов-Козлов Сергей");
         form.$("[data-test-id='phone'] input").setValue("+79099555545");
         form.$(".button").click();
-        $("[data-test-id='agreement'].input_invalid").shouldHave(pseudo(":checkbox__text", "color", "rgb(255, 92, 92)"));
+        $("[data-test-id='agreement'].input_invalid").shouldBe(visible);
     }
 
     @Test
